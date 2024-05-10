@@ -1,24 +1,16 @@
 import "./App.scss";
 import { useSpring, animated } from "@react-spring/web";
+import Trails from "./components/Trail";
 
 function App() {
   const spring = useSpring({
-    from: { x: 0 },
-    to: { x: 100 },
+    from: { scale: 0 },
+    to: { scale: 1 },
   });
   return (
     <>
       <main>
-        <animated.div
-          style={{
-            ...spring,
-            width: "100px",
-            height: "100px",
-            borderRadius: "50%",
-            backgroundColor: "red",
-            marginLeft: "5px",
-          }}
-        />
+        <Trails />
         <section>About</section>
         <section>Contact</section>
         <section>Blog</section>

@@ -6,6 +6,8 @@
 
 body {
   min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 section {
@@ -15,8 +17,7 @@ section {
   align-items: center;
   text-transform: uppercase;
   font-size: 3rem;
-  
-  
+
   &:nth-child(1) {
     background: #f06f6f;
   }
@@ -32,4 +33,21 @@ section {
   &:nth-child(4) {
     background: #c985f3;
   }
+}
+
+.textTrail {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  color: black;
+  font-size: 6em;
+  font-weight: 800;
+  letter-spacing: 5px;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.container {
+  font-weight: 800;
 }
