@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  
+  
+  &:nth-child(1) {
+    background: #f06f6f;
+  }
+
+  &:nth-child(2) {
+    background: #f0d351;
+  }
+
+  &:nth-child(3) {
+    background: #7bd5f8;
+  }
+
+  &:nth-child(4) {
+    background: #c985f3;
+  }
+}
