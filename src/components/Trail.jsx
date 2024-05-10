@@ -8,6 +8,7 @@ const Trail = ({ open, children }) => {
       mass: 5,
       tension: 100,
       friction: 100,
+      duration: 500,
     },
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
