@@ -30,7 +30,7 @@ const Trail = ({ open, children }) => {
 export default function Trails() {
   const [open, setOpen] = useState(true);
   return (
-    <section className="container" onClick={() => setOpen((state) => !state)}>
+    <section  onClick={() => setOpen((state) => !state)}>
       <Trail open={open}>
         <span>Lorem</span>
         <span>Ipsum</span>

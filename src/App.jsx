@@ -1,6 +1,7 @@
 import "./App.scss";
 import { useSpring, animated } from "@react-spring/web";
 import Trails from "./components/Trail";
+import Colorbox from "./components/Colorbox";
 
 function App() {
   const spring = useSpring({
@@ -11,9 +12,7 @@ function App() {
     <>
       <main>
         <Trails />
-        <section>About</section>
-        <section>Contact</section>
-        <section>Blog</section>
+        <Colorbox />
       </main>
     </>
   );
